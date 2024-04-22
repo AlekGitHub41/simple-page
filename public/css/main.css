@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Playfair_Display";
+    font-style: normal;
+    src: url("../font/Playfair_Display/static/PlayfairDisplay-Black.ttf") format('truetype');
+}
+
+.container_ {
+    max-width: 2978px;
+    /*min-width: 520px;*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.index3 {
+    padding-left: 39%;
+}
+
+.image_block {
+    position: absolute;
+    top: 500px;
+    right: 6.2%;
+}
+
+@media (max-width: 1500px) {
+    .image_block {
+        left: 0;
+        top: 580px;
+    }
+}
+
+@media (max-width: 974px) {
+    .index3 {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        height: 1680px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .claim {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .image_block {
+        display: flex;
+        height: 700px;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 170px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .block1, .block2, .block3 {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .index2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 950px;
+    }
+    .index2 .group2{
+        padding-left: 10%;
+    }
+
+    .index3 {
+        height: 700px;
+    }
+
+    .index3_content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-left: 10%;
+        align-items: center;
+    }
+    .index3_content_left{
+        max-width: 284px;
+    }
+    .footer{
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_block1{
+        display: flex;
+        height: 200px;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf") format('truetype');
+}
+
+.header {
+    background-image: url("../img/ImageBackground1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text1, .text5, .text6, .text7 {
+    font-family: 'Playfair_Display', sans-serif;
+}
+
+.text2, .text3, .text4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.block1 {
+    background-image: url("../img/block1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block2 {
+    background-image: url("../img/block2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block3 {
+    background-image: url("../img/block3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.group1 {
+    border-radius: 16px;
+    background: linear-gradient(0.00deg, rgb(0, 0, 0) -10.487%, rgba(0, 0, 0, 0) 62.394%), url("../img/group1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.group11 {
+    border-radius: 16px;
+    background: linear-gradient(0.00deg, rgb(0, 0, 0) -10.487%, rgba(0, 0, 0, 0) 62.394%), url("../img/block66.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index3 {
+    background-image: url("../img/man_with_glasses.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
