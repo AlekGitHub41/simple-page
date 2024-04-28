@@ -1,3 +1,36 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    src: url("../../public/font/Montserrat/Montserrat-VariableFont_wght.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Playfair";
+    font-style: normal;
+    src: url("../../public/font/Playfair_Display/static/PlayfairDisplay-Black.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Custom";
+    font-style: normal;
+    src: url("../../public/font/Jacquard_24/Jacquard24-Regular.ttf") format('truetype');
+}
+
+/*@layer base {*/
+/*    @font-face {*/
+/*        font-family: "Montserrat";*/
+/*        font-style: normal;*/
+/*        src: url("../../public/font/Montserrat/Montserrat-VariableFont_wght.ttf") format('ttf');*/
+/*    }*/
+/*    @font-face {*/
+/*        font-family: "playfair";*/
+/*        font-style: normal;*/
+/*        src: url("../../public/font/Playfair_Display/static/PlayfairDisplay-Black.ttf") format('tttf');*/
+/*    }*/
+/*    .menu{*/
+/*        font-family: 'Montserrat', "sans-serif"*/
+/*    }*/
+/*}*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+

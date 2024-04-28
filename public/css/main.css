@@ -4,9 +4,9 @@
     src: url("../font/Playfair_Display/static/PlayfairDisplay-Black.ttf") format('truetype');
 }
 
+
 .container_ {
     max-width: 2978px;
-    /*min-width: 520px;*/
     width: 100%;
     margin: 0 auto;
 }
@@ -17,105 +17,150 @@
     margin: 0;
 }
 
+.group1 {
+    margin-right: 50px;
+}
+
+.group11 {
+    margin-right: 60px;
+}
+
 .index3 {
     padding-left: 39%;
 }
 
-.image_block {
-    position: absolute;
-    top: 500px;
-    right: 6.2%;
+.header {
+    border: 1px solid black;
 }
 
 @media (max-width: 1500px) {
     .image_block {
-        left: 0;
-        top: 580px;
+        top: 770px;
     }
 }
 
-@media (max-width: 974px) {
-    .index3 {
-        padding-left: 0;
-    }
-}
-
-@media (max-width: 500px) {
-    .header {
-        height: 1680px;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .claim {
+@media (max-width: 1200px) {
+    .index2 {
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
-        height: 150px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .group1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .group11 {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .group2 {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1016px) {
+    .header {
+        height: 1150px;
     }
 
     .image_block {
-        display: flex;
-        height: 700px;
-        justify-content: space-between;
-        flex-direction: column;
-        margin-top: 170px;
-        margin-bottom: 30px;
+        right: 0;
         width: 100%;
+        margin: 0 auto;
+    }
+
+    .block1 {
+        margin-right: 50px;
     }
 
     .block1, .block2, .block3 {
-        max-width: 100%;
-        width: 100%;
+        margin: 50px auto;
     }
 
-    .index2 {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        height: 950px;
-    }
-    .index2 .group2{
-        padding-left: 10%;
-    }
+    @media (max-width: 862px) {
+        .header {
+            height: 1460px;
+        }
 
-    .index3 {
-        height: 700px;
-    }
+        .index3 {
+            padding: 0;
+            margin: 0;
+            height: 800px;
+        }
 
-    .index3_content {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        padding-left: 10%;
-        align-items: center;
-    }
-    .index3_content_left{
-        max-width: 284px;
-    }
-    .footer{
-        height: 400px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer_block1{
-        display: flex;
-        height: 200px;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-    }
+        .index3_content {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
-}
+        .index3_content > * {
+            margin: 0 auto;
+        }
 
-@font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf") format('truetype');
+        .index3_content_left {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .index3_content_left > * {
+            margin: 0 auto;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 300px;
+            align-items: center;
+        }
+
+        .footer_block1 {
+            padding-left: 50px;
+        }
+
+        .footer_block1_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 150px;
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    @media (max-width: 650px) {
+        .header {
+            height: 1680px;
+        }
+
+        .image_block {
+            top: 760px;
+        }
+
+        .block1, .block2, .block3 {
+            margin: 50px auto;
+        }
+
+        @media (max-width: 500px) {
+            .header {
+                height: 1780px;
+            }
+
+            .image_block {
+                top: 860px;
+            }
+
+            .menu {
+                display: none;
+            }
+        }
+    }
 }
 
 .header {
@@ -148,6 +193,7 @@
     background-image: url("../img/block3.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .group1 {
@@ -155,16 +201,20 @@
     background: linear-gradient(0.00deg, rgb(0, 0, 0) -10.487%, rgba(0, 0, 0, 0) 62.394%), url("../img/group1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
+
 .group11 {
     border-radius: 16px;
     background: linear-gradient(0.00deg, rgb(0, 0, 0) -10.487%, rgba(0, 0, 0, 0) 62.394%), url("../img/block66.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .index3 {
     background-image: url("../img/man_with_glasses.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }

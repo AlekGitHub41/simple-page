@@ -1,8 +1,8 @@
 @extends('basic-html')
 @section('content')
     <div class="main_container">
-        <div class="container_">
-            <div class="header pt-[50px] w-full h-[1000px] px-[6.2%]">
+        <div class="container_ font-[montserrat]" style="font-family: 'Montserrat', sans-serif">
+            <div class="header pt-[50px] w-full h-[1000px] px-[6.2%] relative">
                 <div class="flex items-center justify-between text-white w-full">
                     <img src="{{ asset('svg/logo.svg') }}" alt="">
                     <div class="menu flex justify-between items-center max-w-[477px] w-full h-[29px]">
@@ -18,9 +18,9 @@
                     </div>
                     <img class="cursor-pointer" src="{{ asset('svg/burger.svg') }}" alt="">
                 </div>
-                <div class="container_header_text flex justify-start w-full mt-[83px] relative">
+                <div class="container_header_text flex justify-start w-full mt-[83px] relative" >
                     <div class="header_text h-[575px] max-w-[610px] w-full">
-                        <p class="text1 text-white text-[70px] font-bold leading-[96px]">
+                        <p class="text1 text-white text-[70px] font-bold leading-[96px] font-[playfair]">
                             Открой для себя Новую Ирландию
                         </p>
                         <p class="text2 text-[#FFFFFF] text-[24px] font-[400] leading-[29px] max-w-[550px] w-full">
@@ -48,7 +48,7 @@
                         <div class="social w-[238px] h-[57px] mt-[58px]">
                             <p class="text4 text-[16px] font-[400] leading-[20px] text-[#A4ABB9]">Подписывайтесь в
                                 соцсетях</p>
-                            <div class="social_svg flex justify-between items-center w-full mt-[15px]">
+                            <div class="social_svg flex flex-wrap justify-between items-center w-full mt-[15px]">
                                 <a href="">
                                     <img src="svg/iconYouTube.svg" alt="">
                                 </a>
@@ -64,21 +64,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="image_block flex justify-between max-w-[945px] w-full absolute">
-                        <div class="block1 max-w-[285px] w-full h-[200px] rounded-[18px]">
-                            <x-mini-images-block text1="02" text2="Водопады Исландии"/>
-                        </div>
-                        <div class="block2 max-w-[285px] w-full h-[200px] rounded-[18px]">
-                            <x-mini-images-block text1="03" text2="Сказочные доломиты"/>
-                        </div>
-                        <div class="block3 max-w-[285px] w-full h-[200px] rounded-[18px]">
-                            <x-mini-images-block text1="04" text2="Неизведанная норвегия"/>
-                        </div>
+                </div>
+                <div class="image_block flex flex-wrap justify-between max-w-[945px] w-full absolute top-[710px] right-[6.2%]">
+                    <div class="block1 min-w-[285px] h-[200px] rounded-[18px]" >
+                        <x-mini-images-block text1="02" text2="Водопады Исландии"/>
+                    </div>
+                    <div class="block2 min-w-[285px] h-[200px] rounded-[18px]">
+                        <x-mini-images-block text1="03" text2="Сказочные доломиты"/>
+                    </div>
+                    <div class="block3 min-w-[285px] h-[200px] rounded-[18px]">
+                        <x-mini-images-block text1="04" text2="Неизведанная норвегия"/>
                     </div>
                 </div>
             </div>
             <div class="content w-full">
-                <div class="index2 flex justify-between max-w-[1500px] w-full my-[193px] mx-auto">
+                <div class="index2 flex justify-between max-w-[1500px] w-full my-[193px] mx-auto ml-[30px] mr-[30px]">
                     <div class="group1 max-w-[872px] w-full h-[472px] p-[30px]">
                         <x-large-text text1="10-24" text2="апреля" text3="Большое ущелье на острове Гавайи"/>
                     </div>
@@ -88,7 +88,7 @@
                 <div class="index3 w-full h-[518px] pt-[30px]">
                     <div class="index3_content flex justify-between max-w-[740px] w-full h-[390px]">
                         <div class="index3_content_left max-w-[384px] w-full">
-                            <p class="index3_text1 text1 max-w-[384px] w-full h-[210px] text-[42px] font-bold leading-[56px]">
+                            <p class="index3_text1 text1 max-w-[384px] w-full h-[210px] text-[42px] font-bold leading-[56px] font-[playfair]">
                                 Оставьте заявку на бесплатную консультацию
                             </p>
                             <p class="index3_tex2 text2 max-w-[228px] w-full text-[21px] font-[400] leading-[26px]">
@@ -113,25 +113,27 @@
                         {{--                        </div>--}}
                     </div>
                 </div>
-                <div class="index2 flex justify-between max-w-[1500px] w-full my-[193px] mx-auto">
+                <div class="index2 flex justify-between max-w-[1500px] w-full my-[193px] mx-auto ml-[30px]">
                     <x-large-text-description text1="Что пишут участники наших путешествий"
                                               text2="87% участников приходят по личной рекомендации отдрузей. А каждый 4-ый путешествует с нами больше двух раз!"/>
-                    <div class="group11 max-w-[872px] w-full h-[472px] p-[30px]">
+                    <div class="group11 max-w-[872px] w-full h-[472px] p-[30px] ml-[30px]">
                         <x-large-text text1="Отзыв" text2="Елена Иванова"
                                       text3="Пожалуй, это был самый лучший отпуск в моей жизни..."/>
                     </div>
                 </div>
             </div>
             <div class="footer flex justify-around w-full h-[179px] bg-[#E0E4E9] pt-[80px]">
-                <div class="footer_block1 flex justify-between max-w-[900px] w-full h-[50px]">
-                    <img src="svg/IconLogDark1.svg" alt="" class="w-[160px] h-[35px]">
-                    <p class="max-w-[245px] w-full h-[37px] text-[21px] font-medium text-[rgb(110,136,161)] leading-none">
-                        Политика конфиденциальности
-                    </p>
-                    <p class="max-w-[298px] w-full h-[37px] text-[21px] font-semibold text-[#6e88a1] leading-[20px]">
-                        Соглашение на обработку
-                        персональных данных
-                    </p>
+                <div class="footer_block1">
+                    <div class="footer_block1_content flex justify-between max-w-[900px] w-full h-[50px]">
+                        <img src="svg/IconLogDark1.svg" alt="" class="w-[160px] h-[35px]">
+                        <p class="max-w-[245px] w-full h-[37px] text-[21px] font-medium text-[rgb(110,136,161)] leading-none">
+                            Политика конфиденциальности
+                        </p>
+                        <p class="max-w-[298px] w-full h-[37px] text-[21px] font-semibold text-[#6e88a1] leading-[20px]">
+                            Соглашение на обработку
+                            персональных данных
+                        </p>
+                    </div>
                 </div>
                 <div class="footer_block2 max-w-[235px] w-full h-[57px]">
                     <div class="social_svg flex justify-between items-center w-full">
