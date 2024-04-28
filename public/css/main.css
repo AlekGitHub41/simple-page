@@ -134,7 +134,7 @@
             margin-bottom: 30px;
         }
     }
-    @media (max-width: 650px) {
+    @media (max-width: 572px) {
         .header {
             height: 1680px;
         }
@@ -158,6 +158,15 @@
 
             .menu {
                 display: none;
+            }
+            @media (max-width: 356px) {
+                .header {
+                    height: 1880px;
+                }
+
+                .image_block {
+                    top: 960px;
+                }
             }
         }
     }
