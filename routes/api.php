@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Api\ModalWindow;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/modal-window', [Controller::class, 'modal_window'])->name("get.modal-window");
+Route::get('/modal-window', [ModalWindow::class, 'index'])->name("get.modal-window");
